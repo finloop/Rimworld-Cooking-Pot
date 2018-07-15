@@ -37,9 +37,6 @@
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
     <recipes>
-      <li>CookSoupSimple5</li>
-      <li>CookSoupSimple10</li>
-      <li>CookSoupSimple15</li>
     </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>

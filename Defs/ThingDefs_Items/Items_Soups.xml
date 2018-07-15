@@ -63,4 +63,47 @@
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
   </ThingDef>
+
+      <ThingDef ParentName="SoupRottable">
+    <defName>SoupFine</defName>
+    <label>fine soup</label>
+    <description>A complex dish assembled with care from a wide selection of ingredients.</description>
+    <graphicData>
+      <texPath>Things/Item/Soup/Fine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>24</MarketValue>
+      <WorkToMake>450</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+			<tasteThought>AteFineMeal</tasteThought>
+			<nutrition>0.90</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="SoupRottable">
+    <defName>SoupLavish</defName>
+    <label>lavish soup</label>
+    <description>A masterpiece of the culinary arts, this Soup nourishes the body, mind, and soul.</description>
+    <graphicData>
+      <texPath>Things/Item/Soup/Lavish</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <WorkToMake>800</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+			<tasteThought>AteLavishMeal</tasteThought>
+      <nutrition>1.00</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
   </Defs>

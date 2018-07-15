@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-    <!---------------------------------- BASE SOUP --------------------------------------------------------------------->
-
     <RecipeDef Name="CookSoupBase" Abstract="True">
         <fixedIngredientFilter>
             <categories>
@@ -32,7 +29,6 @@
         </recipeUsers>
     </RecipeDef>
 
-    <!---------------------------------- SIMPLE SOUP --------------------------------------------------------------------->
 
     <RecipeDef Name="CookSoupSimple5" ParentName="CookSoupBase">
         <defName>CookSoupSimple5</defName>
@@ -189,7 +185,6 @@
         </recipeUsers>
     </RecipeDef>
 
-    <!---------------------------------- FINE SOUP --------------------------------------------------------------------->
 
     <RecipeDef ParentName="CookSoupBase">
         <defName>CookSoupFine5</defName>
@@ -312,7 +307,7 @@
         </recipeUsers>
     </RecipeDef>
 
-    <!---------------------------------- LAVISH SOUP --------------------------------------------------------------------->
+
 
     <RecipeDef ParentName="CookSoupBase">
 		<defName>CookSoupLavish5</defName>
@@ -344,7 +339,7 @@
 			</li>
 		</ingredients>
 		<products>
-      <MealLavish>5</MealLavish>
+      <SoupLavish>5</SoupLavish>
     </products>
 		<skillRequirements>
 			<Cooking>8</Cooking>
@@ -384,7 +379,7 @@
 			</li>
 		</ingredients>
 		<products>
-      <MealLavish>10</MealLavish>
+      <SoupLavish>10</SoupLavish>
     </products>
 		<skillRequirements>
 			<Cooking>8</Cooking>
@@ -424,7 +419,7 @@
 			</li>
 		</ingredients>
 		<products>
-      <MealLavish>15</MealLavish>
+      <SoupLavish>15</SoupLavish>
     </products>
 		<skillRequirements>
 			<Cooking>8</Cooking>

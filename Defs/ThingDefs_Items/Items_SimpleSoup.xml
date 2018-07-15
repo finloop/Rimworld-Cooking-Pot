@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="SoupBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+			<Beauty>-4</Beauty>
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>30</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </ingestible>
+  </ThingDef>
+
+    <ThingDef ParentName="SoupBase" Name="SoupRottable" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>6</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+    <ThingDef ParentName="SoupRottable">
+    <defName>SoupSimple</defName>
+    <label>simple soup</label>
+    <description>A simple soup quickly cooked from a few ingredients.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SoupSimple</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <WorkToMake>300</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+			<nutrition>0.90</nutrition>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  </Defs>

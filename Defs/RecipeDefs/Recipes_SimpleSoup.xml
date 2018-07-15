@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="CookSoupBase" Abstract="True">
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodRaw</li>
+            </categories>
+            <disallowedSpecialFilters>
+                <li>AllowPlantFood</li>
+            </disallowedSpecialFilters>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>FoodRaw</li>
+            </categories>
+            <exceptedCategories>
+                <li>EggsFertilized</li>
+            </exceptedCategories>
+            <exceptedThingDefs>
+                <li>Human_Meat</li>
+                <li>Megaspider_Meat</li>
+                <li>InsectJelly</li>
+            </exceptedThingDefs>
+        </defaultIngredientFilter>
+        <workSkill>Cooking</workSkill>
+
+                <recipeUsers>
+            <li>CookingPot</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef Name="CookSoupSimple5" ParentName="CookSoupBase">
+        <defName>CookSoupSimple5</defName>
+        <label>cook simple soup x 5</label>
+        <description>Cooks a straightforward soup from one ingredient.</description>
+        <jobString>Cooking simple soup.</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <workAmount>1300</workAmount>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>2.5</count>
+            </li>
+        </ingredients>
+
+                <fixedIngredientFilter>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>2.5</count>
+            </li>
+        </fixedIngredientFilter>
+		<defaultIngredientFilter>
+<li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>2.5</count>
+            </li>
+        </defaultIngredientFilter>
+
+        <products>
+            <SoupSimple>5</SoupSimple>
+        </products>
+        <workSkill>Cooking</workSkill>
+    </RecipeDef>
+
+    <RecipeDef Name="CookSoupSimple10" ParentName="CookSoupBase">
+        <defName>CookSoupSimple10</defName>
+        <label>cook simple soup x 10</label>
+        <description>Cooks a straightforward soup from one ingredient.</description>
+        <jobString>Cooking simple soup.</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <workAmount>2700</workAmount>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+                <fixedIngredientFilter>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </fixedIngredientFilter>
+		<defaultIngredientFilter>
+<li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </defaultIngredientFilter>
+        <products>
+            <SoupSimple>10</SoupSimple>
+        </products>
+        <workSkill>Cooking</workSkill>
+    </RecipeDef>
+
+    <RecipeDef Name="CookSoupSimple15" ParentName="CookSoupBase">
+        <defName>CookSoupSimple15</defName>
+        <label>cook simple soup x 15</label>
+        <description>Cooks a straightforward soup from one ingredient.</description>
+        <jobString>Cooking simple soup.</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <workAmount>3000</workAmount>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>7.5</count>
+            </li>
+        </ingredients>
+        <products>
+            <SoupSimple>15</SoupSimple>
+        </products>
+        <fixedIngredientFilter>
+             <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>7.5</count>
+            </li>
+        </fixedIngredientFilter>
+		<defaultIngredientFilter>
+        <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>7.5</count>
+            </li>
+        </defaultIngredientFilter>
+
+
+
+        <workSkill>Cooking</workSkill>
+    </RecipeDef>
+
+</Defs>
